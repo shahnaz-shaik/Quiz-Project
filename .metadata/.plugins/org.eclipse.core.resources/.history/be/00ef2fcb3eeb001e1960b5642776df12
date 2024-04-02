@@ -1,0 +1,42 @@
+package com.quiz.main.controller;
+
+
+
+public class QuizDto {
+ private String subtopic;
+ private int numQueH;
+ private int numQueM;
+ private int numQueE;
+ private String title;
+public String getSubtopic() {
+	return subtopic;
+}
+public void setSubtopic(String subtopic) {
+	this.subtopic = subtopic;
+}
+public int getNumQueH() {
+	return numQueH;
+}
+public void setNumQueH(int numQueH) {
+	this.numQueH = numQueH;
+}
+public int getNumQueM() {
+	return numQueM;
+}
+public void setNumQueM(int numQueM) {
+	this.numQueM = numQueM;
+}
+public int getNumQueE() {
+	return numQueE;
+}
+public void setNumQueE(int numQueE) {
+	this.numQueE = numQueE;
+}
+public String getTitle() {
+	return title;
+}
+public void setTitle(String title) {
+	this.title = title;
+}
+ 
+}

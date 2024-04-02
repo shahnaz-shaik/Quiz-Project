@@ -1,0 +1,5 @@
+package com.quiz.main.feign;
+
+public interface QuizInterface {
+
+}

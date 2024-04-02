@@ -1,0 +1,1 @@
+insert into question values(1,"java","hard","abc","dgf","hdg","ufg","what is the ans","dgf","Direct");

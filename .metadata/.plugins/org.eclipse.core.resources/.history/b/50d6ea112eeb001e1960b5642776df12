@@ -1,0 +1,25 @@
+package com.quiz.main.feign;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.question.main.entity.QuestionWrapper;
+import com.question.main.entity.Response;
+
+@FeignClient("QUESTION")
+public interface QuizInterface {
+	
+	@PostMapping("getQuestions")
+	public ResponseEntity<List<QuestionWrapper>> getQuestionsFromId(@RequestBody List<Integer> questionIds);
+	@PostMapping("getScore")
+	public ResponseEntity<Integer> getScore(@RequestBody List<Response> responses);
+	@GetMapping("scoresBySubtopic")
+	public ResponseEntity<Map<String, Integer>> getScoresBySubtopic(@RequestBody List<Response> responses) ;
+
+}

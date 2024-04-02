@@ -1,0 +1,12 @@
+package com.quiz.main.controller;
+
+
+public class QuizDto {
+ String subtopic;
+ int numQueH;
+ int numQueM;
+ int numQueE;
+ String title;
+
+
+}

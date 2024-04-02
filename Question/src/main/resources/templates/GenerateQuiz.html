@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Management</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+<div id="generateQuiz">
+    <h2>Generate Quiz</h2>
+    <form id="generateQuizForm"  action="/generate" method="get">
+        <label for="subtopic">Subtopic:</label><br>
+        <input type="text" id="subtopic" name="subtopic"><br>
+
+        <label for="numQueH">Number of Hard Questions:</label><br>
+        <input type="number" id="numQueH" name="numQueH" min="0"><br>
+
+        <label for="numQueM">Number of Medium Questions:</label><br>
+        <input type="number" id="numQueM" name="numQueM" min="0"><br>
+
+        <label for="numQueS">Number of Easy Questions:</label><br>
+        <input type="number" id="numQueS" name="numQueS" min="0"><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+
+        <button type="submit">Generate</button>
+    </form>	
+</div>
+</body>
